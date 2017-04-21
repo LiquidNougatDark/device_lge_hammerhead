@@ -34,8 +34,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 # inline kernel building
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
-TARGET_VARIANT_CONFIG := hammerhead_defconfig
-TARGET_SELINUX_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 TARGET_GCC_VERSION_ARM := 4.9
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
